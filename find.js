@@ -1,0 +1,13 @@
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+console.log(arr.find(num => num > 5))
+
+
+const names = ["Vishnu", "Abdul", "Rahul", "Arun"]
+
+// names.sort((a,b) => b - a )
+names.sort((a, b) => a.localeCompare(b))
+
+console.log(names)
+
+
