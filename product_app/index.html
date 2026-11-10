@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Store</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Product Store</h1>
+        <p>Explore our products</p>
+    </header>
+
+    <main>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+
+        <p id="loader" class="hidden">
+            Loading products...
+        </p>
+
+        <p id="errorMessage" class="hidden"></p>
+
+        <p id="productCount"></p>
+
+        <section id="products" class="product-container"></section>
+
+    </main>
+    <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
