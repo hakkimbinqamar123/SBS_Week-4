@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Weather Dashboard</h1>
+        <p>Check the weather around the world</p>
+    </header>
+
+    <main class="dashboard">
+
+        <form id="searchForm" class="search-form">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+                required
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+
+        <p id="loader" class="hidden">
+            Loading weather information...
+        </p>
+
+
+        <p id="errorMessage" class="hidden"></p>
+
+        <section id="currentWeather"></section>
+
+
+        <section id="forecastSection" class="hidden">
+
+            <div class="forecast-heading">
+                <h2>5-Day Forecast</h2>
+
+                <select id="forecastFilter">
+                    <option value="all">All days</option>
+                    <option value="rainy">Rainy days</option>
+                    <option value="clear">Clear days</option>
+                </select>
+            </div>
+
+            <div id="forecastContainer"
+                 class="forecast-container">
+            </div>
+
+        </section>
+
+        <section class="recent-section">
+
+            <h2>Recent Searches</h2>
+
+            <div id="recentCities"></div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
